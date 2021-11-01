@@ -32,7 +32,7 @@ Route::get('/dosen/{id}', [DosenController::class, 'showDosen']);
 Route::get('/dosen/create', [DosenController::class, 'createdosen']);
 Route::post('/dosen/tambah', [DosenController::class, 'tambahdosen']);
 Route::get('/dosen/{id}/edit', [DosenController::class, 'editDosen']);
-Route::post('/dosen/{id}/ubah', [DosenController::class, 'ubahDosen']);
+Route::post('/dosen/ubah/{id}', [DosenController::class, 'ubahDosen']);
 Route::get('/dosen/delete/{id}', [DosenController::class, 'deleteDosen']);
 
 Route::get('/tabelJadwal', [JadwalController::class, 'tabelJadwal']);
